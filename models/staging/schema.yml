@@ -13,3 +13,45 @@ sources:
       - name: raw__title_episode
       - name: raw__title_principals
       - name: raw__title_ratings
+
+models:
+  - name: vw_stg__name_basics
+    description: ""
+    columns:
+      - name: n_const
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+  - name: vw_stg__title_basics
+    description: ""
+    columns:
+      - name: t_const
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+  - name: vw_stg__title_crew
+    description: ""
+    columns:
+      - name: t_const
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+  - name: vw_stg__title_episode
+    description: ""
+    columns:
+      - name: t_const
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+  - name: vw_stg__title_ratings
+    description: ""
+    columns:
+      - name: t_const
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
