@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: imdb_raw
+    description: "Raw IMDB tables"
+    database: imdb
+    schema: raw
+    tables:
+      - name: raw__name_basics
+      - name: raw__title_akas
+      - name: raw__title_basics
+      - name: raw__title_crew
+      - name: raw__title_episode
+      - name: raw__title_principals
+      - name: raw__title_ratings
