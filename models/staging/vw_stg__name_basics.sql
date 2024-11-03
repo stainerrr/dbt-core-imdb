@@ -1,4 +1,3 @@
-
 WITH vw_stg__name_basics AS (
     SELECT
         nconst                           AS n_const,

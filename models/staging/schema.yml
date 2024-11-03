@@ -1,19 +1,5 @@
 version: 2
 
-sources:
-  - name: imdb_raw
-    description: "Raw IMDB tables"
-    database: imdb
-    schema: raw
-    tables:
-      - name: raw__name_basics
-      - name: raw__title_akas
-      - name: raw__title_basics
-      - name: raw__title_crew
-      - name: raw__title_episode
-      - name: raw__title_principals
-      - name: raw__title_ratings
-
 models:
   - name: vw_stg__name_basics
     description: ""
@@ -55,3 +41,5 @@ models:
         data_tests:
           - unique
           - not_null
+  - name: vw_stg__title_principals
+    description: ""

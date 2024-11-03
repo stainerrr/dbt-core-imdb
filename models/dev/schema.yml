@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: dev__movies
+  - name: dev__principals

@@ -1,0 +1,22 @@
+sources:
+  - name: imdb_raw
+    description: "IMDB raw tables"
+    database: imdb
+    schema: raw
+    tables:
+      - name: raw__name_basics
+      - name: raw__title_akas
+      - name: raw__title_basics
+      - name: raw__title_crew
+      - name: raw__title_episode
+      - name: raw__title_principals
+      - name: raw__title_ratings
+
+  - name: imdb_staging
+    description: "IMDB staging tables"
+    database: imdb
+    schema: staging
+    tables:
+      - name: vw_stg__title_basics
+      - name: vw_stg__title_principals
+      - name: vw_stg__title_ratings
